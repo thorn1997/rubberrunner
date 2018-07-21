@@ -12,7 +12,7 @@ public class PlayerController {
 
     public PlayerController() {
         player = new Player();
-        playerRenderer = new PlayerRenderer();
+        playerRenderer = new PlayerRenderer(player);
     }
 
     public void update() {
@@ -29,6 +29,6 @@ public class PlayerController {
     }
 
     public void draw() {
-        //player.draw();
+        playerRenderer.draw();
     }
 }

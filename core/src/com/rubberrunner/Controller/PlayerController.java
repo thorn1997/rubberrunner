@@ -4,14 +4,15 @@ import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Input;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.rubberrunner.Model.Creatures.Player;
+import com.rubberrunner.Renderer.PlayerRenderer;
 
 public class PlayerController {
     Player player;
-    SpriteBatch batch;
+    PlayerRenderer playerRenderer;
 
     public PlayerController() {
         player = new Player();
-        batch = new SpriteBatch();
+        playerRenderer = new PlayerRenderer();
     }
 
     public void update() {
